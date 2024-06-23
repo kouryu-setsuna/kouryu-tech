@@ -1,0 +1,130 @@
+header {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: rgb(255, 255, 255);
+  height: 67px;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  min-width: 926px;
+}
+
+header img {
+  padding: 10px;
+  cursor: pointer;
+}
+
+header .labels {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: white;
+  color: rgb(56, 56, 56);
+}
+
+header .labels div {
+  transition: color 0.2s, background-color 0.2s;
+  font-weight: 500;
+}
+
+header .home {
+  padding: 24px 16px;
+  cursor: pointer;
+}
+
+header .home:hover {
+  background-color: rgb(241, 241, 241);
+  color: rgb(0, 183, 255);
+}
+
+header .home:active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 157, 219);
+}
+
+header .windows {
+  padding: 24px 16px;
+  cursor: pointer;
+}
+
+header .windows:hover {
+  background-color: rgb(241, 241, 241);
+  color: rgb(0, 183, 255);
+}
+
+header .windows:active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 157, 219);
+}
+
+header .linux {
+  padding: 24px 16px;
+  cursor: pointer;
+}
+
+header .linux:hover {
+  background-color: rgb(241, 241, 241);
+  color: rgb(0, 183, 255);
+}
+
+header .linux:active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 157, 219);
+}
+
+header .news {
+  padding: 24px 16px;
+  cursor: pointer;
+}
+
+header .news:hover {
+  background-color: rgb(241, 241, 241);
+  color: rgb(0, 183, 255);
+}
+
+header .news:active {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 157, 219);
+}
+
+header .search-box {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+header .search-box input {
+  position: relative;
+  width: 0;
+  padding: 5px 10px;
+  padding-left: 30px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  background-color: rgba(0, 0, 0, .1);
+  outline: none;
+  border: 1px solid transparent;
+  transition: background-color 0.3s, outline-color 0.3s, border-bottom 0.1s, width 0.3s;
+}
+
+.search-box input:is(:focus, :hover) {
+  width: 200px;
+  background-color: white;
+  border: 1px solid rgb(0, 183, 255);
+}
+
+header .search-box .fa-magnifying-glass {
+  position: absolute;
+  left: 10px;
+  pointer-events: none;
+}
+
+.search-box input:is(:hover, :focus) ~ .fa-magnifying-glass {
+  color: rgb(0, 183, 255);
+}
+
+

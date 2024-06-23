@@ -1,0 +1,31 @@
+.Ad-1 {
+    background-color: rgb(214, 214, 214);
+    width: 1100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 5px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.Ad-1 p {
+    margin-left: 20px;
+    cursor: pointer;
+    color: rgb(121, 121, 121);
+    transition: color 0.3s;
+}
+
+.Ad-1:hover {
+    color: rgb(0, 0, 0);
+}
+
+.Ad-1:hover {
+    background-color: rgb(238, 238, 238);
+}

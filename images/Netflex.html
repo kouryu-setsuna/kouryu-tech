@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/256e881f10.js" crossorigin="anonymous"></script>
+  <title>Netflex</title>
+</head>
+
+<body>
+  <main>
+    <div class="First-Part">
+      <div class="header">
+        <div>
+          <img src="images/pngwing.com.png">
+        </div>
+        <div class="right-side-header">
+          <select class="language">
+            <option value="English">
+              English
+            </option>
+            <option value="Arabic">
+              Arabic
+            </option>
+            <option value="French">
+              French
+            </option>
+          </select>
+          <div class="translate-icon">
+            <i class="fa-solid fa-language"></i>
+          </div>
+          <button>Sign In</button>
+        </div>
+      </div>
+      <div class="first-part-content">
+        <div>
+          <p>
+            Unlimited movies, TV shows, and more
+          </p>
+          <p>
+            Watch anywhere. Cancel anytime.
+          </p>
+          <p>
+            Ready to watch? Enter your email to create or restart your membership.
+          </p>
+        </div>
+        <div class="subscription">
+          <div class="email-input">
+            <input placeholder="Email Address" type="email" required>
+            <label>Email Address</label>
+          </div>
+          <button type="submit">Get Started &gt;</button>
+        </div>
+      </div>
+    </div>
+    <div class="second-part">
+      <div class="second-part-text">
+        <p>
+          Enjoy on your TV
+        </p>
+        <p>
+          Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
+        </p>
+      </div>
+      <div class="second-part-pic">
+        <img src="images/tv.png">
+        <div>
+          <video class="tv-video" muted loop autoplay src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"></video>
+        </div>
+      </div>
+    </div>
+
+    <div class="third-part">
+      <div class="third-part-pic">
+        <img src="images/mobile-0819.jpg">
+      </div>
+      <div class="third-part-text">
+        <p>
+          Download your shows to watch offline
+        </p>
+        <p>
+          Save your favorites easily and always have something to watch.
+        </p>
+      </div>
+    </div>
+
+    <div class="fourth-part">
+      <div class="fourth-part-text">
+        <p>
+          Watch everywhere
+        </p>
+        <p>
+          Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+        </p>
+      </div>
+      <div class="fourth-part-pic">
+        <img src="images/device-pile.png">
+        <div>
+          <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" autoplay loop muted></video>
+        </div>
+      </div>
+    </div>
+
+    <div class="fifth-part">
+      <div class="fifth-part-pic">
+        <img src="images/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png">
+      </div>
+      <div class="fifth-part-text">
+        <p>
+          Create profiles for kids
+        </p>
+        <p>
+          Send kids on adventures with their favorite characters in a space made just for them—free with your membership.
+        </p>
+      </div>
+    </div>
+  </main>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
